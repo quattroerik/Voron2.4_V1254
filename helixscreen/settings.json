@@ -1,6 +1,6 @@
 {
   "active_printer_id": "default",
-  "config_version": 16,
+  "config_version": 21,
   "dark_mode": true,
   "display": {
     "bed_mesh_render_mode": 0,
@@ -8,6 +8,8 @@
     "dim_sec": 300,
     "drm_device": "",
     "gcode_render_mode": 0,
+    "gpu_3d_blocked": false,
+    "gpu_blur_blocked": false,
     "sleep_sec": 600
   },
   "gcode_viewer": {
@@ -22,6 +24,7 @@
       "d": 0.0,
       "e": 1.0,
       "f": 0.0,
+      "recheck_pending": false,
       "valid": false
     },
     "jitter_threshold": 5,
@@ -30,9 +33,6 @@
     "touch_device": ""
   },
   "language": "en",
-  "led": {
-    "selected_strips": null
-  },
   "log_path": "/tmp/helixscreen.log",
   "motion": {
     "jog_mode": 1
@@ -65,19 +65,13 @@
       },
       {
         "phases": {
-          "7": 54
+          "2": 9,
+          "7": 67,
+          "9": 11
         },
-        "temp_bucket": 2,
-        "timestamp": 1777817723,
-        "total": 141
-      },
-      {
-        "phases": {
-          "7": 75
-        },
-        "temp_bucket": 2,
-        "timestamp": 1777819967,
-        "total": 215
+        "temp_bucket": 1,
+        "timestamp": 1785581162,
+        "total": 235
       },
       {
         "phases": {
@@ -142,13 +136,28 @@
         "temp_bucket": 2,
         "timestamp": 1778738709,
         "total": 217
+      },
+      {
+        "phases": {
+          "2": 8,
+          "7": 129,
+          "9": 13
+        },
+        "temp_bucket": 2,
+        "timestamp": 1785592899,
+        "total": 246
+      },
+      {
+        "phases": {
+          "2": 7,
+          "7": 93,
+          "9": 11
+        },
+        "temp_bucket": 2,
+        "timestamp": 1785593447,
+        "total": 310
       }
     ]
-  },
-  "printer": {
-    "leds": {
-      "startup_brightness": null
-    }
   },
   "printers": {
     "default": {
@@ -200,6 +209,8 @@
         ],
         "last_snapshot": {
           "fans": [
+            "fan_generic _emu_fan_0",
+            "fan_generic _emu_fan_1",
             "heater_fan hotend_fan",
             "fan",
             "fan_generic rox",
@@ -211,7 +222,8 @@
             "filament_switch_sensor mmu_pre_gate_1",
             "filament_switch_sensor mmu_gear_0",
             "filament_switch_sensor mmu_gear_1",
-            "filament_switch_sensor extruder_sensor"
+            "filament_switch_sensor extruder_sensor",
+            "filament_switch_sensor toolhead_sensor"
           ],
           "heaters": [
             "heater_bed",
@@ -223,6 +235,10 @@
             "neopixel sb_leds"
           ],
           "sensors": [
+            "temperature_sensor Lane_0",
+            "temperature_sensor Lane_1",
+            "temperature_sensor _Lane_0_onboard",
+            "temperature_sensor _Lane_1_onboard",
             "temperature_sensor cartographer_coil",
             "temperature_sensor chamber",
             "temperature_sensor toolhead",
@@ -231,7 +247,7 @@
             "temperature_sensor psu",
             "temperature_sensor amb_electronics"
           ],
-          "timestamp": "2026-05-14T11:37:53Z"
+          "timestamp": "2026-08-01T13:37:30Z"
         },
         "optional": []
       },
@@ -252,7 +268,6 @@
         ],
         "last_brightness": 100,
         "last_color": "#FFFFFF",
-        "last_white": null,
         "led_on_at_start": false,
         "macro_devices": [],
         "selected": [],
@@ -571,9 +586,7 @@
         }
       },
       "printer_name": "1524",
-      "probe_sensors": {
-        "sensors": null
-      },
+      "probe_sensors": {},
       "temp_sensors": {
         "bed": "heater_bed",
         "hotend": "extruder"
@@ -590,10 +603,10 @@
   "thermal": {
     "rates": {
       "extruder": {
-        "heat_rate": 1.0216065645217896
+        "heat_rate": 6.562667369842529
       },
       "heater_bed": {
-        "heat_rate": 11.287055969238281
+        "heat_rate": 6.998951435089111
       }
     }
   },
