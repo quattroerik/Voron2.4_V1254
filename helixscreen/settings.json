@@ -75,54 +75,6 @@
       },
       {
         "phases": {
-          "7": 89
-        },
-        "temp_bucket": 2,
-        "timestamp": 1778225722,
-        "total": 133
-      },
-      {
-        "phases": {
-          "7": 76
-        },
-        "temp_bucket": 2,
-        "timestamp": 1778237603,
-        "total": 225
-      },
-      {
-        "phases": {
-          "7": 87
-        },
-        "temp_bucket": 2,
-        "timestamp": 1778238322,
-        "total": 216
-      },
-      {
-        "phases": {
-          "7": 67
-        },
-        "temp_bucket": 2,
-        "timestamp": 1778239438,
-        "total": 235
-      },
-      {
-        "phases": {
-          "7": 55
-        },
-        "temp_bucket": 2,
-        "timestamp": 1778247106,
-        "total": 400
-      },
-      {
-        "phases": {
-          "7": 63
-        },
-        "temp_bucket": 2,
-        "timestamp": 1778261878,
-        "total": 124
-      },
-      {
-        "phases": {
           "7": 78
         },
         "temp_bucket": 2,
@@ -156,6 +108,58 @@
         "temp_bucket": 2,
         "timestamp": 1785593447,
         "total": 310
+      },
+      {
+        "phases": {
+          "7": 86,
+          "9": 13
+        },
+        "temp_bucket": 2,
+        "timestamp": 1785606591,
+        "total": 323
+      },
+      {
+        "phases": {
+          "7": 133
+        },
+        "temp_bucket": 2,
+        "timestamp": 1785661235,
+        "total": 221
+      },
+      {
+        "phases": {
+          "7": 164
+        },
+        "temp_bucket": 2,
+        "timestamp": 1785664220,
+        "total": 207
+      },
+      {
+        "phases": {
+          "7": 87,
+          "9": 11
+        },
+        "temp_bucket": 2,
+        "timestamp": 1786266194,
+        "total": 174
+      },
+      {
+        "phases": {
+          "7": 100,
+          "9": 11
+        },
+        "temp_bucket": 2,
+        "timestamp": 1786289995,
+        "total": 176
+      },
+      {
+        "phases": {
+          "7": 140,
+          "9": 10
+        },
+        "temp_bucket": 2,
+        "timestamp": 1786293463,
+        "total": 211
       }
     ]
   },
@@ -247,7 +251,7 @@
             "temperature_sensor psu",
             "temperature_sensor amb_electronics"
           ],
-          "timestamp": "2026-08-01T13:37:30Z"
+          "timestamp": "2026-08-14T15:48:37Z"
         },
         "optional": []
       },
@@ -603,10 +607,10 @@
   "thermal": {
     "rates": {
       "extruder": {
-        "heat_rate": 6.562667369842529
+        "heat_rate": 1.4040263891220093
       },
       "heater_bed": {
-        "heat_rate": 6.998951435089111
+        "heat_rate": 3.5981698036193848
       }
     }
   },
@@ -622,7 +626,7 @@
     }
   },
   "update": {
-    "dismissed_version": "0.99.62"
+    "dismissed_version": "0.99.113"
   },
   "wizard_completed": true
 }
