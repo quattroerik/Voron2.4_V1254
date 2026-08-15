@@ -75,19 +75,12 @@
       },
       {
         "phases": {
-          "7": 78
+          "7": 79,
+          "9": 11
         },
-        "temp_bucket": 2,
-        "timestamp": 1778410378,
-        "total": 153
-      },
-      {
-        "phases": {
-          "7": 58
-        },
-        "temp_bucket": 2,
-        "timestamp": 1778738709,
-        "total": 217
+        "temp_bucket": 1,
+        "timestamp": 1786723922,
+        "total": 237
       },
       {
         "phases": {
@@ -160,6 +153,24 @@
         "temp_bucket": 2,
         "timestamp": 1786293463,
         "total": 211
+      },
+      {
+        "phases": {
+          "7": 81,
+          "9": 30
+        },
+        "temp_bucket": 2,
+        "timestamp": 1786725730,
+        "total": 198
+      },
+      {
+        "phases": {
+          "7": 52,
+          "9": 11
+        },
+        "temp_bucket": 2,
+        "timestamp": 1786727523,
+        "total": 178
       }
     ]
   },
@@ -251,7 +262,7 @@
             "temperature_sensor psu",
             "temperature_sensor amb_electronics"
           ],
-          "timestamp": "2026-08-14T15:48:37Z"
+          "timestamp": "2026-08-15T05:24:34Z"
         },
         "optional": []
       },
@@ -607,10 +618,10 @@
   "thermal": {
     "rates": {
       "extruder": {
-        "heat_rate": 1.4040263891220093
+        "heat_rate": 1.0490511655807495
       },
       "heater_bed": {
-        "heat_rate": 3.5981698036193848
+        "heat_rate": 3.2683722972869873
       }
     }
   },
